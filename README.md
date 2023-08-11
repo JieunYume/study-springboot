@@ -23,9 +23,9 @@ primary kay로 테이블 행의 여러 정보들 중 행을 식별할 수 있어
 
 entity Relationship Diagram로 데이터베이스 구조를 한눈에 알아보기 위해서 쓰이는 것이다.
 ERD의 핵심은Entity, relationship, Attribute 이다.
-Entity = 객체 테이블이다
-relationship = Entity간의 관계이다
-Attribute = Entity를 구성하고 있는 구성 요소이다.
+* Entity = 객체 테이블이다
+* Relationship = Entity간의 관계이다
+* Attribute = Entity를 구성하고 있는 구성 요소이다.
 
 #러프한 ERD
 *키 속성 - 타원에 밑줄
