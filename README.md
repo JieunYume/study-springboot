@@ -13,26 +13,30 @@
 
 2. 자신의 컴퓨터에 클론하기
    Fork한 저장소를 자신의 컴퓨터로 클론합니다.
-   ![image](https://github.com/ChoMinGi/study-springboot/assets/81455273/0e393886-ae38-4b2a-aa97-55ba17a07ef1)
+   ![image](https://github.com/ChoMinGi/study-springboot/assets/81455273/f886889c-0bb3-40b6-b8d4-16fc63f5c68d)
+
 
 3. 원본 저장소를 Upstream으로 추가하기
    클론한 디렉토리로 이동후에 원본 저장소의 변경사항을 쉽게 가져오기 위해 Upstream을 설정합니다.
-   ![image](https://github.com/ChoMinGi/study-springboot/assets/81455273/80e7a900-2d9c-4fe3-9668-6eedea31683a)
+   ![image](https://github.com/ChoMinGi/study-springboot/assets/81455273/e91ac46c-e66f-40f2-84e3-172766b16b85)
+
    `git remote add upstream https://github.com/ApptiveDev/study-springboot.git` 
    이후에 branch -a 명령어로 브랜치를 확인합니다. 해당 터미널에서 나올 경우에는 :q로 exit 합니다.
    
-4. 작업할 step 브랜치 생성하기
+5. 작업할 step 브랜치 생성하기
    각 step별로 브랜치를 생성하여 작업합니다.
    자신의 브랜치에 study-n 폴더를 만들고 내부에 과제물을 제출한다.
+   ![image](https://github.com/ChoMinGi/study-springboot/assets/81455273/9f3d65f3-c118-49dd-8c29-3a4cea145f09)
+
    
-   `git checkout -b study-step1 origin/study-step1`
+   `git checkout -b study-step1 upstream/study-step1`
    
 
 
-6. 과제 작업하기
+7. 과제 작업하기
    지정된 폴더 내에서 과제를 수행합니다.
 
-7. 변경사항 커밋하기
+8. 변경사항 커밋하기
    과제가 완료되면 변경사항을 커밋합니다.
 
 ```
