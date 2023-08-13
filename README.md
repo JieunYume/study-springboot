@@ -5,27 +5,34 @@
 ## 스터디 참여 및 과제 제출 가이드라인
 
 1. 저장소 Fork 하기
-   원본 저장소를 자신의 GitHub 계정으로 Fork 하세요.
+원본 저장소를 자신의 GitHub 계정으로 Fork 하세요.
+   - 오른쪽 상단의 'Fork' 버튼을 클릭합니다.
+   - 자신의 계정을 선택하여 Fork를 완료합니다.
+   (이때 main 브랜치만 가져오기에 체 하셨다면 3번 이후에 git fetch upstream 을 실행해주세요)
 
-- 오른쪽 상단의 'Fork' 버튼을 클릭합니다.
-- 자신의 계정을 선택하여 Fork를 완료합니다.
 
 2. 자신의 컴퓨터에 클론하기
    Fork한 저장소를 자신의 컴퓨터로 클론합니다.
+   ![image](https://github.com/ChoMinGi/study-springboot/assets/81455273/0e393886-ae38-4b2a-aa97-55ba17a07ef1)
 
 3. 원본 저장소를 Upstream으로 추가하기
-   원본 저장소의 변경사항을 쉽게 가져오기 위해 Upstream을 설정합니다.
+   클론한 디렉토리로 이동후에 원본 저장소의 변경사항을 쉽게 가져오기 위해 Upstream을 설정합니다.
+   ![image](https://github.com/ChoMinGi/study-springboot/assets/81455273/80e7a900-2d9c-4fe3-9668-6eedea31683a)
+   `git remote add upstream https://github.com/ApptiveDev/study-springboot.git` 
+   이후에 branch -a 명령어로 브랜치를 확인합니다. 해당 터미널에서 나올 경우에는 :q로 exit 합니다.
+   
+4. 작업할 step 브랜치 생성하기
+   각 step별로 브랜치를 생성하여 작업합니다.
+   자신의 브랜치에 study-n 폴더를 만들고 내부에 과제물을 제출한다.
+   
+   `git checkout -b study-step1 origin/study-step1`
+   
 
-`git remote add upstream https://github.com/ApptiveDev/study-springboot.git` 4. 작업할 step 브랜치 생성하기
-각 step별로 브랜치를 생성하여 작업합니다.
-자신의 브랜치에 study-n 폴더를 만들고 내부에 과제물을 제출한다.
 
-`git checkout -b step-1 origin/step-1`
-
-5. 과제 작업하기
+6. 과제 작업하기
    지정된 폴더 내에서 과제를 수행합니다.
 
-6. 변경사항 커밋하기
+7. 변경사항 커밋하기
    과제가 완료되면 변경사항을 커밋합니다.
 
 ```
