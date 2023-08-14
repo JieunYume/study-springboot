@@ -2,21 +2,24 @@
 먼저 해당 브랜치에 자신의 영문 디렉토리를 만들고 가장 상위의 example과 README.md 파일을 자신의 디렉토리에 copy+paste 하여 과제를 진행해주세요
 ## 실습 과제
 아래의 설명을 따라서 적절한 버전과 dependency를 추가하여 spring initializer로 프로젝트를 생성한다.
+
 ### 스프링부트 프로젝트 생성하기
 
 Spring Initalizer 링크 (IntelliJ 내에서 생성해도 좋다.)
+
+
 https://start.spring.io/
+
+![image](https://github.com/ApptiveDev/study-springboot/assets/81455273/e8471be4-ca23-42bc-b972-d829045de1f0)
+
 
 #### 이 스터디는 아래와 같은 버전으로 진행한다.
 
-- Spring Boot 3.0.5
+- Spring Boot 3.1.2
 - Gradle-Groovy
-- Jar
 - Java 17
 
-위와 같은 세팅으로 간다.
-![https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbmnIVw%2Fbtr9mN5T0LA%2FysU8KOrnaIacDieal96XMK%2Fimg.png](image.png)
-
+위와 같은 세팅으로 설정한다. 추후에 추가 가능하니 
 스프링부트나 JDK, Java의 경우에는 여러가지 버전이 존재하고 그 사이에서 자유롭게 선택이 가능하다.
 
 #### 차이가 뭘까?
@@ -39,10 +42,18 @@ https://start.spring.io/
 - Validation ; Entity를 선언시에 해당 기능으로 쉽게 객체 필드에 대한 제약조건을 설정할수 있다.
 - MySQL Driver ; MySQL DB와 연결하기 위한 드라이버
 
-## 최종적으로는
-#### Generate 후 Git에 업로드까지 해보기
-
+  
 다운로드 후 해당 레포지토리에 스터디 규칙을 지켜서 자신의 영문이름으로 폴더를 만들고 안에 압축 해제를 한다.
+
+
+## 최종적으로는
+#### Generate 후 적절한 JDK 설정과 docker-compose로 만들어진 docker 위의 mySQL과 연결까지 해봅시다!
+이전에 example에 있는 assignment01을 실행하여 아래와 같은 결과가 나오는지 확인해봅시다.
+![image](https://github.com/ApptiveDev/study-springboot/assets/81455273/f4ed7fdb-0387-423c-8bce-3f917c7b7eed)
+
+
+*만약 제대로 실행이 되었지만 아래와 같은 오류가 발생한다면 일단은 괜찮습니다. step 3에서 마저 진행하도록 하겠습니다.
+![image](https://github.com/ApptiveDev/study-springboot/assets/81455273/ad0d2ee4-58fa-409c-8720-c418129200ae)
 
 
 ## 개념 과제
@@ -50,6 +61,7 @@ https://start.spring.io/
 - 생성자는 왜 사용하나요? 객체를 생성할 때 어떤 역할을 하나요?
 - 상속은 어떻게 사용되나요? 왜 중요한 개념인가요?
 - 접근 제어자의 종류와 각각의 특징은 무엇인가요?
+- ORM 에 대해서 알아보세요
 
 ## Example을 보고 실시한다.
 ### example/생성자와_메서드
@@ -89,11 +101,12 @@ Car myCar = new Car("Hyundai", "G80", 2022);
             }
         ```
 
-
 #### /Main.java
   1. 기존에 만든 mycar 인스턴스 대신에 새로운 자동차를 만들어주고 그 자동차의 속도를 100으로 설정해주는 코드를 작성해주세요
-  2. 생성자 오버로딩을
-#### 
+  2. 생성자 오버로딩을 구현해보았다면 초기 속도가 100인 자동차의 인스턴스를 만들어보고 emergencyBrake라는 메서드를 만들어 한번에 속도를 0으로 줄이는 메서드를 적용시켜봅시다.
+     ![image](https://github.com/ApptiveDev/study-springboot/assets/81455273/b57033d1-8d94-467f-9277-703050aa64bc)
+
+### example/
 - 왜 OOP에서는 인스턴스를 만들어 사용할까?
 - private 멤버에 대한 public 접근자 메서드를 왜 따로 만들어줄까?
   - private 멤버 변수에 직접 접근할 수 없을 때, 어떻게 값을 읽고 변경할 수 있게될까?
